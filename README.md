@@ -25,3 +25,12 @@ make up
 ```bash
 make bash
 ```
+
+## Para desenvolver novas funcionalidades do projeto
+#### Para gerar os arquivos de traduções
+```bash
+uv run manage.py makemessages -l pt_BR
+```
+```bash
+uv run manage.py compilemessages
+```
