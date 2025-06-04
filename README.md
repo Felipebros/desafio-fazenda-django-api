@@ -14,25 +14,30 @@ Copie o arquivo `.env.example` e renomei para `.env`
 make build
 ```
 
-### Parar a execução
-```bash
-make stop
-```
-
 ### Para executar
 ```bash
 make up
 ```
 
-### Para acessar o bash
+### Parar a execução
 ```bash
-make bash
+make stop
 ```
+
+### Para fazer login acesse:
+
+http://localhost:8000/admin/
+
+Login: admin
+
+Senha: admin
 
 ## Para desenvolver novas funcionalidades do projeto
 ### Para executar durante o desenvolvimento
 1. Copie o arquivo `.env.example` e renomei para `.env`
+
 2. Descomente a linha abaixo, e comente a outra linha que contém DB_HOST
+
 ```env
 DB_HOST=127.0.0.1 # via uv run
 ```
@@ -43,6 +48,7 @@ ou
 ```bash
 docker-compose up --build -d my_postgres_db
 ```
+
 3. Execute o comando abaixo para executar o projeto
 ```bash
 make rundev
@@ -58,6 +64,11 @@ make rundev2
 ou
 ```bash
 uv run gunicorn --bind 0.0.0.0:8000 setup.wsgi
+```
+
+### Para acessar o bash
+```bash
+make bash
 ```
 
 ### Para gerar os arquivos de traduções
