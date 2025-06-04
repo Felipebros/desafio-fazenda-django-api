@@ -15,14 +15,14 @@ RUN apt update && \
 
 COPY . .
 
+RUN chmod +x ./entrypoint.sh
+
 # Adicione seus aliases do ls -alF para ll ao .bashrc
 RUN echo "alias ll='ls -alF'" >> /root/.bashrc
 
-# Defina o comando padrão (opcional)
-CMD ["bash"]
+# ENTRYPOINT ["./entrypoint.sh"]
+ENTRYPOINT ["sh", "./entrypoint.sh"]
 
-# # Expõe a porta em que o Gunicorn vai rodar (padrão do Django)
-# EXPOSE 8000
+CMD ["gunicorn", "--bind", "0.0.0.0:8000", "setup.wsgi"]
 
-# # Comando para iniciar a aplicação usando Gunicorn
-# CMD ["gunicorn", "--bind", "0.0.0.0:8000", "setup.wsgi"]
+EXPOSE 8000
