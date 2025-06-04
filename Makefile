@@ -19,5 +19,14 @@ build2:
 build:
 	docker-compose up --build -d
 
+buildbd:
+	docker-compose up --build -d my_postgres_db
+
+rundev:
+	uv run manage.py runserver
+
+rundev2:
+	uv run gunicorn --bind 0.0.0.0:8000 setup.wsgi
+
 dumpdata:
 	docker-compose exec django_web python manage.py dumpdata --indent 4 > arquivo.json
