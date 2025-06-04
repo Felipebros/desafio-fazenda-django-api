@@ -1,0 +1,43 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# Felipe Soares Barbosa Silveira <felipeiturama@gmail.com>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: 0.1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-06-04 17:51-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Felipe Soares Barbosa Silveira <felipeiturama@gmail.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: farmers/models.py:13
+msgid "CPF (11 digits) or CNPJ (14 digits)"
+msgstr "CPF (11 dígitos) ou CNPJ (14 dígitos)"
+
+#: farmers/models.py:19
+msgid "Farmer"
+msgstr "Produtor Rural"
+
+#: farmers/models.py:20
+msgid "Farmers"
+msgstr "Produtores Rurais"
+
+#: farmers/models.py:31
+msgid "Invalid CPF."
+msgstr "CPF inválido."
+
+#: farmers/models.py:34
+msgid "Invalid CNPJ."
+msgstr "CNPJ inválido."
+
+#: farmers/models.py:39
+msgid "CPF must have 11 digits or CNPJ must have 14 digits."
+msgstr "CPF deve ter 11 dígitos ou CNPJ deve ter 14 dígitos."
